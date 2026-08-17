@@ -10,7 +10,7 @@
 
 - Supervisor Name
 
-## Abstract
+Abstract
 
 This project develops a DNA sequence analysis tool for searching biological
 motifs in large genome sequences. The tool accepts a genome sequence and one
