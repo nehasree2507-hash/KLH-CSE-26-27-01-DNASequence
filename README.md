@@ -1,48 +1,24 @@
-# DNA Sequence Analysis Tool Using Advanced String Matching Algorithms 
+DNA Sequence Analysis Tool Using Advanced String Matching Algorithms
 
-## Team Members
+Team Members
+2520030010 G. Boomika Sre
+2520030174 P. Nehasree
+2520030282 P. Hasini
 
-- 2520030010 G Boomika Sre
-- 2520030174 P.Nehasree
-- 2520030282 P.Hasini
-
-## Supervisor
-
-- Supervisor Name
+Supervisor
+Dr CH ANURADHA
 
 Abstract
+We developed the DNA Sequence Analysis Tool Using Advanced String Matching Algorithms to efficiently find DNA motifs in genome sequences. The application takes a DNA genome sequence and one or more motifs as input, finds all occurrences by using advanced string matching algorithms like Knuth–Morris–Pratt (KMP), Rabin–Karp, and Aho–Corasick, and shows the matching positions together with execution time and number of matches. This project demonstrates the importance of efficient Data Structures and Algorithms for bioinformatics by evaluating the performance of these algorithms on genome datasets of different sizes. The presented system offers a high performance DNA pattern search solution that is accurate, scalable and suitable for large genomic datasets.
 
-This project develops a DNA sequence analysis tool for searching biological
-motifs in large genome sequences. The tool accepts a genome sequence and one
-or more DNA motifs as input and reports the locations where each motif occurs.
 
-The project implements and compares three string-matching algorithms:
-Brute Force, Knuth–Morris–Pratt (KMP), and Aho–Corasick. Brute Force is used
-as a basic reference algorithm, KMP provides efficient single-pattern matching,
-and Aho–Corasick supports simultaneous searching of multiple motifs.
+Setup and Execution Instructions
+Requirements:
+Java Development Kit (JDK) 17 or later.
+Command Prompt or Terminal.
 
-The system is designed to process genome sequences of up to 100 MB. It
-demonstrates the application of data structures and string algorithms to
-bioinformatics problems.
 
-## Project Objective
-
-- Search for DNA motifs in a genome sequence.
-- Support multiple motifs simultaneously.
-- Report accurate match positions.
-- Compare the performance of different algorithms.
-- Process large DNA sequences efficiently.
-
-## Input
-
-The program accepts:
-
-1. A genome sequence containing the symbols A, C, G, and T.
-2. One or more DNA motifs to be searched.
-
-Example:
-
-```text
+Example Input:
 Genome:
 ACGTACGTGACCTAGCTAGCTAG
 
@@ -50,155 +26,53 @@ Motifs:
 ACGT
 TAG
 GAC
-```
 
-## Output
+Example Output:
+Motif Positions Count
+ACGT 1, 5 2
+TAG 13, 17 2
+GAC 9 1
+The positions in the output use 1-based indexing, which means that the first character of the genome is counted as position 1.
 
-The program displays:
+Current Phase Status:
+Completed:
+Project title selected.
+Team members finalized.
+Problem statement prepared.
+Project objectives identified.
+Java selected as the programming language.
+Input and output formats planned.
+KMP and Aho–Corasick algorithms selected.
+Basic project folder structure created.
+Sample genome and motif data prepared.
 
-- Motif sequence.
-- Position of every match.
-- Number of occurrences.
-- Execution time of each algorithm.
+Currently in Progress:
+Learning and implementing the KMP algorithm in Java.
+Learning and implementing the Aho–Corasick algorithm in Java.
+Connecting the algorithms to the main program.
+Testing the program with different genome sequences and motifs.
+Checking whether the reported match positions are correct.
+Preparing the project documentation and presentation.
 
-Example:
+Pending:
+Testing the program with a large genome sequence.
+Comparing the execution time of KMP and Aho–Corasick.
+Preparing performance tables and graphs.
+Finalizing the result files.
+Completing the project report.
+Performing final testing and demonstration.
 
-```text
-Motif       Positions       Count
-ACGT        1, 5             2
-TAG         13, 17           2
-GAC         9               1
-```
+Overall Status:
+Our project is currently in the initial implementation and testing phase. The project topic, objectives, input and output formats, and algorithms have been decided. We are currently working on understanding the algorithms and implementing them in Java. Testing with large genome sequences, performance comparison, documentation, and the final presentation are yet to be completed.
 
-Positions are reported using 1-based indexing.
+Project Scope:
+The current project focuses on exact motif matching. It searches for the given DNA patterns and reports their locations in the genome sequence. The project does not currently identify the biological function of a motif or support approximate matches.
 
-## Algorithms Used
-
-### Knuth–Morris–Pratt
-
-Uses a Longest Prefix Suffix table to avoid unnecessary comparisons.
-
-Time complexity:
-
-```text
-O(n + m)
-```
-
-### Aho–Corasick
-
-Builds a trie containing all motifs and uses failure links to search for
-multiple motifs in a single scan.
-
-Time complexity:
-
-```text
-O(n + L + z)
-```
-
-where:
-
-- n is the genome length.
-- L is the total length of all motifs.
-- z is the number of matches.
-
-## Requirements
-
-- Python 3.8 or later
-- No external libraries are required for the basic version.
-
-## Setup Instructions
-
-Clone or download the project:
-
-```bash
-git clone <repository-link>
-cd DNA-Motif-Searching
-```
-
-Optional: create a virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Activate it on Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-Activate it on Linux or macOS:
-
-```bash
-source venv/bin/activate
-```
-
-## Execution Instructions
-
-Run the main program:
-
-```bash
-python SRC/main.py
-```
-
-If the program accepts input files:
-
-```bash
-python SRC/main.py \
-    --genome DATA/sample_genome.txt \
-    --motifs DATA/sample_motifs.txt
-```
-
-The results will be saved in:
-
-```text
-OUTPUT/motif_matches.csv
-```
-
-## Current Phase Status
-
-### Completed
-
-- Project topic selected.
-- Problem statement prepared.
-- Input and output format defined.
-- Brute Force algorithm designed.
-- KMP algorithm designed.
-- Aho–Corasick algorithm designed.
-- Basic DNA validation implemented.
-- Folder structure created.
-
-### In Progress
-
-- Integrating all algorithms into the main program.
-- Testing with multiple motifs.
-- Testing with large genome sequences.
-- Comparing execution times.
-- Preparing graphs and final documentation.
-
-### Pending
-
-- Final user interface.
-- Complete performance analysis.
-- Final report.
-- Presentation slides.
-- Final testing and demonstration.
-
-## Limitations
-
-- The current version searches for exact motif matches.
-- Approximate matches and mutations are not yet supported.
-- Biological interpretation of detected motifs is outside the current scope.
-
-## Future Enhancements
-
-- Reverse-complement searching.
-- Approximate motif matching.
-- FASTA file support.
-- Graphical user interface.
-- CSV and JSON report generation.
-- Parallel processing for very large genome datasets.
-
-## License
-
-This project is developed for academic purposes.
+Future Improvements:
+Add reverse-complement searching.
+Support approximate motif matching.
+Add FASTA file support.
+Create a graphical user interface.
+Export results in CSV or JSON format.
+Display graphs comparing algorithm performance.
+Add support for parallel processing of very large genome sequences.
