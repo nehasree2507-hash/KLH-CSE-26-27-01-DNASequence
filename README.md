@@ -74,16 +74,6 @@ Positions are reported using 1-based indexing.
 
 ## Algorithms Used
 
-### Brute Force
-
-Checks the motif at every possible position in the genome.
-
-Time complexity:
-
-```text
-O(nm)
-```
-
 ### Knuth–Morris–Pratt
 
 Uses a Longest Prefix Suffix table to avoid unnecessary comparisons.
