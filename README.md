@@ -6,7 +6,7 @@ Team Members
 2520030282 P. Hasini
 
 Supervisor
-Dr CH ANURADHA
+Dr Ch Anuradha
 
 Abstract
 We developed the DNA Sequence Analysis Tool Using Advanced String Matching Algorithms to efficiently find DNA motifs in genome sequences. The application takes a DNA genome sequence and one or more motifs as input, finds all occurrences by using advanced string matching algorithms like Knuth–Morris–Pratt (KMP), Rabin–Karp, and Aho–Corasick, and shows the matching positions together with execution time and number of matches. This project demonstrates the importance of efficient Data Structures and Algorithms for bioinformatics by evaluating the performance of these algorithms on genome datasets of different sizes. The presented system offers a high performance DNA pattern search solution that is accurate, scalable and suitable for large genomic datasets.
