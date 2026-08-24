@@ -12,7 +12,8 @@
 
 # Abstract
 
-The **DNA Sequence Analysis Tool Using Advanced String Matching Algorithms** is designed to efficiently identify DNA motifs within genome sequences using advanced string matching techniques. The application accepts a DNA sequence and one or more motifs as input and identifies all occurrences of the motifs using algorithms such as **Knuth–Morris–Pratt (KMP), Rabin–Karp, and Aho–Corasick**. The system also compares the execution time and performance of these algorithms on genome datasets of varying sizes. This project demonstrates the practical application of Data Structures and Algorithms in bioinformatics by providing an accurate, scalable, and efficient solution for DNA pattern searching.
+We developed the DNA Sequence Analysis Tool Using Advanced String Matching Algorithms to efficiently find DNA motifs in genome sequences. The application takes a DNA genome sequence and one or more motifs as input, finds all occurrences by using advanced string matching algorithms like Knuth–Morris–Pratt (KMP), Rabin–Karp, and Aho–Corasick, and shows the matching positions together with execution time and number of matches. This project demonstrates the importance of efficient Data Structures and Algorithms for bioinformatics by evaluating the performance of these algorithms on genome datasets of different sizes. The presented system offers a high performance DNA pattern search solution that is accurate, scalable and suitable for large genomic datasets.
+
 
 ---
 
@@ -59,17 +60,7 @@ Aho–Corasick is one of the most efficient algorithms for multi-pattern matchin
 
 ---
 
-## 4. Dan Gusfield (1997)
-**Book:** *Algorithms on Strings, Trees, and Sequences*
-
-The book discusses advanced string processing algorithms and their applications in computational biology, genome sequencing, and pattern matching.
-
-**Conclusion:**  
-Efficient string matching algorithms play a crucial role in modern bioinformatics and biological sequence analysis.
-
----
-
-## 5. National Center for Biotechnology Information (NCBI)
+## 4. National Center for Biotechnology Information (NCBI)
 
 NCBI provides publicly available genomic datasets used worldwide for biological research and algorithm evaluation.
 
