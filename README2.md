@@ -3,7 +3,8 @@
 A Java program that finds a short DNA pattern (called a motif) inside a long DNA sequence.
 
 Team: G. Boomika Sre, P. Nehasree, P. Hasini
-Guide: Dr. Ch. Anuradha
+
+## Guide: Dr. Ch. Anuradha
 
 ## What it does
 
