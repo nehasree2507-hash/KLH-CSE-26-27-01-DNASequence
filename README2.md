@@ -2,7 +2,6 @@
 
 A Java console tool that finds DNA motifs in a genome using six string-matching algorithms, and compares how fast they are.
 
-**Course:** Data Structures and Algorithms-3 (25CS2103E), K L (Deemed to be) University
 **Guide:** Dr. Ch. Anuradha
 
 ## Team
